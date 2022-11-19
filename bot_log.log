@@ -1,0 +1,106 @@
+WARNING:aiogram:Goodbye!
+WARNING:aiogram:Goodbye!
+WARNING:aiogram:Goodbye!
+WARNING:aiogram:Goodbye!
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageCantBeEdited("Message can't be edited")>
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\e_kat\PycharmProjects\bot_recognize_speech\client\client.py", line 52, in voice_message_handler
+    await message.edit_text('тук-тук')
+  File "C:\Python310\lib\site-packages\aiogram\types\message.py", line 2892, in edit_text
+    return await self.bot.edit_message_text(
+  File "C:\Python310\lib\site-packages\aiogram\bot\bot.py", line 2990, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Python310\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Python310\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Python310\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageCantBeEdited: Message can't be edited
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageCantBeEdited("Message can't be edited")>
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\e_kat\PycharmProjects\bot_recognize_speech\client\client.py", line 52, in voice_message_handler
+    await message.edit_text('тук-тук')
+  File "C:\Python310\lib\site-packages\aiogram\types\message.py", line 2892, in edit_text
+    return await self.bot.edit_message_text(
+  File "C:\Python310\lib\site-packages\aiogram\bot\bot.py", line 2990, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Python310\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Python310\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Python310\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageCantBeEdited: Message can't be edited
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageCantBeEdited("Message can't be edited")>
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Python310\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\e_kat\PycharmProjects\bot_recognize_speech\client\client.py", line 52, in voice_message_handler
+    await message.edit_text('тук-тук')
+  File "C:\Python310\lib\site-packages\aiogram\types\message.py", line 2892, in edit_text
+    return await self.bot.edit_message_text(
+  File "C:\Python310\lib\site-packages\aiogram\bot\bot.py", line 2990, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Python310\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Python310\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Python310\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Python310\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageCantBeEdited: Message can't be edited
+WARNING:aiogram:Goodbye!
+ERROR:bot_log:voice_message_handler:2022-11-17 19:12:15.369208	Message can't be edited
+WARNING:aiogram:Goodbye!
+WARNING:aiogram:Goodbye!
+ERROR:bot_log:voice_message_handler:2022-11-17 19:15:05.147555	Message can't be edited
+WARNING:aiogram:Goodbye!
+WARNING:bot_log:on_startup:2022-11-17 19:15:40.852599	Bot online. OK!
+ERROR:bot_log:voice_message_handler:2022-11-17 19:16:10.924721	Message can't be edited
+WARNING:aiogram:Goodbye!
+WARNING:bot_log:on_startup:2022-11-17 19:23:42.708638	Bot online. OK!
+ERROR:bot_log:voice_message_handler:2022-11-17 19:23:47.840185	'AudioFile' object has no attribute 'answer'
+WARNING:aiogram:Goodbye!
+WARNING:bot_log:on_startup:2022-11-17 19:24:52.671413	Bot online. OK!
+WARNING:aiogram:Goodbye!
+WARNING:bot_log:on_startup:2022-11-17 19:26:09.178030	Bot online. OK!
+WARNING:aiogram:Goodbye!
+WARNING:bot_log:on_startup:2022-11-17 19:26:45.167102	Bot online. OK!
+WARNING:aiogram:Goodbye!
