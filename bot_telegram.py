@@ -20,3 +20,5 @@ client.register_handlers_client(dp)
 # start polling
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
+
+# bf0af31866cc8c79a79abf14eccab8f75e2db468
